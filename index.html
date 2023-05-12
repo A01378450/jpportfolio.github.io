@@ -1,108 +1,161 @@
+<!-- Jorge Penagos - 12/5/2023
+Diseño de pagina web para la semana Tec -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página web</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Menu de navegacion -->
     <header class="header" id="inicio">
-        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
-        <nav class="menu-navegacion">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicio">Servicio</a>
-                <a href="#galeria">Portafolio</a>
-                <a href="#expertos">Especializados</a>
-                <a href="#footer">Contacto</a>
-        </nav>
-        <div class="contenedor head">
-            <h1 class="titulo">Seguridad Informatica</h1>
-            <p class="copy">Que aptitudes se nos piden y que puedo demostrar.</p>
-        </div>
-        
+      <img class="hamburguer" src="img/hamburguesa.svg" alt="" />
+      <nav class="menu-navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicio">Servicio</a>
+        <a href="#galeria">Portafolio</a>
+        <a href="#expertos">Especializados</a>
+        <a href="#footer">Contacto</a>
+      </nav>
+      <div class="contenedor head">
+        <h1 class="titulo">Seguridad Informatica</h1>
+        <p class="copy">Que aptitudes se nos piden y que puedo demostrar.</p>
+      </div>
     </header>
     <main>
-        <section class="services contenedor" id="servicio">
-            <h2 class="subtitulo">Algunos proyectos que he realizado</h2>
-            <div class="contenedor-servicio">
-                <img src="img/checklist.svg" alt="">
-                <div class="checklist-servicio">
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">1</span>Diseño de aplicacion</h3>
-                        <p> Se desarrollo una aplicacion con "Android Studio". Esta recopilaba datos del clima de una base de datos, informacion importante como Incendios, Temblores e Inundaciones y ademas tenia la capacidad de mandar notificaciones sobre estos eventos. Se conectaba mediante una pagina web enlazada a servicios de AWS como es S3 y EC2</p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">2</span>Diseño web</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Diseño web</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
-                    </div>
-                </div>
+      <!-- Contenedor Servicios -->
+      <section class="services contenedor" id="servicio">
+        <h2 class="subtitulo">Experiencia</h2>
+        <div class="contenedor-servicio">
+          <img src="img/checklist.svg" alt="" />
+          <div class="checklist-servicio">
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">1</span> Diseño de un modelo de trafico
+              </h3>
+              <p>
+                Se desarrollo una aplicacion con "Unity". Este era un modelo de
+                trafico el cual permitia visualizar el flujo de vehiculos en una
+                ciudad y como se comportaban para llegar a su destino sin causar
+                accidentes, tomando en cuenta rutas, semaforos, direcciones y si
+                existian vehiculos adyacentes o no. Se utilizo C# para la
+                programacion.
+              </p>
             </div>
-        </section>
-        <section class="gallery" id="galeria">
-            <div class="contenedor">
-                <h2 class="subtitulo">Galeria</h2>
-                <div class="contenedor-galeria">
-                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
-                    <img src="img/dos.jpg" class="img-galeria" alt="">
-                    <img src="img/tres.jpg" class="img-galeria" alt="">
-                    <img src="img/cuatro.jpg" class="img-galeria" alt="">
-                    <img src="img/cinco.jpg" class="img-galeria" alt="">
-                    <img src="img/seis.jpg" class="img-galeria" alt="">
-                </div>
+            <div class="service">
+              <h3 class="n-service"><span class="number">2</span>Plearnium</h3>
+              <p>
+                Se trabajo en un videojuego llamado Plearnium, el cual se
+                desarrollo en Unity y se utilizo C# para la programacion. Se
+                hizo un refactor del proyecto modificando archivos y creando
+                nuevos scripts para mejorar el rendimiento del juego. Tambien se
+                añadio mas funcionalidad a la pagina web del juego, incluyendo
+                un sistema de login y registro y la visualizacion del
+                leaderboard.
+              </p>
             </div>
-        </section>
-        <div class="imagen-light">
-            <img src="img/close.svg" alt="" class="close">
-            <img src="" alt="" class="agregar-imagen">
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">3</span>Diseño de aplicacion movil
+              </h3>
+              <p>
+                Se desarrollo una aplicacion con "Android Studio". Esta
+                recopilaba datos del clima de una base de datos, informacion
+                importante como Incendios, Temblores e Inundaciones y ademas
+                tenia la capacidad de mandar notificaciones sobre estos eventos.
+                Se conectaba mediante una pagina web enlazada a servicios de AWS
+                como es S3 y EC2
+              </p>
+            </div>
+            <div class="service">
+              <h3 class="n-service">
+                <span class="number">4</span> Diseño de redes en Packet Tracer
+              </h3>
+              <p>
+                Experiencia en "Cisco Packet Tracer" para la creacion y el
+                diseño de redes.
+              </p>
+            </div>
+          </div>
         </div>
-        <section class="contenedor" id="expertos">
-            <h2 class="subtitulo">Expertos en:</h2>
-            <section class="experts">
-                <div class="cont-expert">
-                    <img src="img/pie_chart.svg" alt="">
-                    <h3 class="n-expert">Analytics</h3>
-                </div>
-                <div class="cont-expert">
-                    <img src="img/search_engine.svg" alt="">
-                    <h3 class="n-expert">SEO</h3>
-                </div>
-                <div class="cont-expert">
-                    <img src="img/security.svg" alt="">
-                    <h3 class="n-expert">Security</h3>
-                </div>
-            </section>
+      </section>
+      <!-- Contenedor portafolio/galeria -->
+      <section class="gallery" id="galeria">
+        <div class="contenedor">
+          <h2 class="subtitulo">Galeria</h2>
+          <div class="contenedor-galeria">
+            <img src="img/1.jpg" class="img-galeria" alt="" />
+            <img src="img/2.jpg" class="img-galeria" alt="" />
+            <img src="img/3.jpg" class="img-galeria" alt="" />
+            <img src="img/4.jpg" class="img-galeria" alt="" />
+            <img src="img/5.jpg" class="img-galeria" alt="" />
+            <img src="img/6.jpg" class="img-galeria" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Boton de close y lightbox-->
+      <div class="imagen-light">
+        <img src="img/close.svg" alt="" class="close" />
+        <img src="" alt="" class="agregar-imagen" />
+      </div>
+      <!-- Contenedor Expertos -->
+      <section class="contenedor" id="expertos">
+        <h2 class="subtitulo">Que se necesita?</h2>
+        <section class="experts">
+          <div class="cont-expert">
+            <img src="img/search_engine.svg" alt="" />
+            <h3 class="n-expert">Auditorias con sistemas informaticos</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="img/pie_chart.svg" alt="" />
+            <h3 class="n-expert">Conocimiento en lenguajes de programacion</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="img/security.svg" alt="" />
+            <h3 class="n-expert">Bases sobre redes y ciberseguridad</h3>
+          </div>
         </section>
+      </section>
     </main>
-
+    <!-- Footer de la pagina -->
     <footer id="footer">
-        <div class="contenedor footer-content">
-                <div class="contact-us">
-                    <h2 class="brand">AlexCG Design</h2>
-                    <p>Somos expertos en la creación de tus sueños</p>
-                </div>
-                <div class="social-media">
-                    <a href="./" class="social-media-icon">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="./" class="social-media-icon">
-                        <i class='bx bxl-twitter' ></i>
-                    </a>
-                    <a href="./" class="social-media-icon">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                </div>
+      <div class="contenedor footer-content">
+        <div class="contact-us">
+          <h2 class="brand">Jorge Penagos</h2>
+          <p>
+            Portafolio de evidencias e introduccion a la seguridad informatica
+          </p>
         </div>
-        <div class="line"></div>
+        <!-- Redes sociales -->
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/jorge-alberto-penagos-mendez"
+            class="social-media-icon"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/A01378450" class="social-media-icon">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://docs.google.com/document/d/1eQPjjZFhFyUcz8CuqWdcHsle5FC7dbewIYo6bZXa2Tg/edit?usp=sharing" class="social-media-icon">
+            <i class='bx bxs-file-doc'></i>
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
     </footer>
+    <!-- Scripts utilizables -->
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
-</body>
+  </body>
 </html>
