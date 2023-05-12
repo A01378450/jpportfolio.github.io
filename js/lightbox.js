@@ -1,26 +1,27 @@
 const imagenes = document.querySelectorAll('.img-galeria')
-const imagenesLight = document.querySelector('.agregar-imagen')
+const imagenLight = document.querySelector('.agregar-imagen');
 const contenedorLight = document.querySelector('.imagen-light')
-const hamburguesa1 = document.querySelector('.hamburguesa1');
+const closeLight = document.querySelector('.close')
 
-imagenes.forEach(imagen =>{
-    imagen.addEventListener('click', ()=>{
-        aparecerImagen(imagen.getAttribute('src'))
-        
+
+imagenes.forEach(imagen => {
+    imagen.addEventListener('click',()=>{
+        aparecerImagen(imagen.getAttribute('src'));
     })
-})
+});
 
-contenedorLight.addEventListener('click', (e)=>{
-    if(e.target !== imagenesLight){
+contenedorLight.addEventListener('click',(e)=>{
+    if(e.target !== imagenLight){
         contenedorLight.classList.toggle('show')
-        imagenesLight.classList.toggle('showImage')
-        hamburguesa1.style.opacity = '1'
+        imagenLight.classList.toggle('showImage')
+        hamburguer.style.opacity = '1';
     }
 })
 
+
 const aparecerImagen = (imagen)=>{
-    imagenesLight.src = imagen;
+    imagenLight.src = imagen;
     contenedorLight.classList.toggle('show')
-    imagenesLight.classList.toggle('showImage')
-    hamburguesa1.style.opacity = '0'
+    imagenLight.classList.toggle('showImage')
+    hamburguer.style.opacity = '0';
 }
